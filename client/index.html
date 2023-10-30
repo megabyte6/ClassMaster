@@ -3,15 +3,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script>
-        const server = new WebSocket(`ws://localhost:8080`);
 
-        socket.onmessage = ({ data }) => {
-            console.log(`Message from server: ${data}`);
-        }
-    </script>
+    <script defer src="script.js"></script>
 </head>
 <body>
-    <button onclick="server.send('Hello from client')">Send</button>
+    <input type="text" id="message">
+    <button id="send">Send</button>
 </body>
 </html>
